@@ -1,0 +1,168 @@
+.navbar_container {
+	background-color: #1a1a1a;
+	width: 100%;
+}
+
+.navbar_content {
+	max-width: 1290px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 20px;
+
+	@media (max-width: 768px) {
+		padding: 10px;
+	}
+}
+
+.logo_container {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	h1 {
+		font-size: 2rem;
+		color: #e0e0e0;
+		font-weight: 500;
+	}
+}
+
+.nav_links {
+	display: flex;
+	align-items: center;
+
+	@media (max-width: 768px) {
+		position: relative;
+	}
+
+	.mobile_menu_button {
+		display: none;
+
+		@media (max-width: 768px) {
+			display: block;
+			background: none;
+			border: none;
+			color: #e0e0e0;
+			font-size: 1.5rem;
+			cursor: pointer;
+		}
+	}
+
+	.menu_items {
+		display: flex;
+		gap: 15px;
+
+		@media (max-width: 768px) {
+			display: none;
+			flex-direction: column;
+			position: absolute;
+			top: calc(100% + 10px);
+			right: 0;
+			background-color: #1a1a1a;
+			border-radius: 5px;
+			padding: 15px;
+			width: 200px;
+			z-index: 10;
+			gap: 10px;
+		}
+
+		&.menu_open {
+			display: flex;
+		}
+
+		li {
+			list-style: none;
+		}
+	}
+}
+
+.navbar_secondary {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 25px;
+	background-color: #121212;
+	border-radius: 5px;
+
+	.page_title {
+		font-size: 1.6rem;
+		color: #d1d1d1;
+		font-weight: 600;
+		text-align: center;
+		font-weight: 700;
+		text-align: center;
+		flex-grow: 1;
+		margin: 0 20px;
+	}
+
+	button {
+		font-size: 1rem;
+		background-color: #333333;
+		color: #d1d1d1;
+		border: none;
+		border-radius: 3px;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #444444;
+		}
+	}
+
+	@media (max-width: 410px) {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+
+		.page_title {
+			margin: 0;
+			text-align: left;
+			font-size: 1.4rem;
+		}
+
+		button {
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
+
+.modal_form {
+	display: flex;
+	flex-direction: column;
+}
+
+.input_field {
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	width: 100%;
+	padding: 8px;
+}
+
+.textarea_field {
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	width: 100%;
+	padding: 8px;
+}
+
+.back_button {
+	background: #007bff;
+	color: #fff;
+	padding: 8px 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.edit_button {
+	background: #28a745;
+	color: #fff;
+	padding: 8px 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
