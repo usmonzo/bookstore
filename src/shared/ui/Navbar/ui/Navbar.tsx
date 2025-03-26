@@ -192,6 +192,16 @@ export const Navbar = () => {
 						className={cls.input_field}
 					/>
 					<Input
+						type='url'
+						placeholder='URL'
+						value={localEditBook?.cover ?? ''}
+						onChange={e =>
+							setLocalEditBook({ ...localEditBook, cover: e.target.value })
+						}
+						required
+						className={cls.input_field}
+					/>
+					<Input
 						type='number'
 						placeholder='Страницы'
 						value={localEditBook?.pages ?? ''}

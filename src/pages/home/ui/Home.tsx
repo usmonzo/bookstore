@@ -22,7 +22,7 @@ export default function Home() {
 						<BookComponent
 							key={book.id}
 							id={book.id}
-							title={book.id + book.title}
+							title={book.title}
 							author={book.author}
 							cover={book.cover || ''}
 							description={book.description || 'No description available'}
