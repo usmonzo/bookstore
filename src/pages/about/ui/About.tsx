@@ -3,7 +3,7 @@ import ImageWithSkeleton from '@/shared/ui/ImageWithSkeleton'
 import { useEffect } from 'react'
 import { FaTrash } from 'react-icons/fa'
 import { useParams } from 'react-router-dom'
-import cls from './about.module.scss'
+import cls from './About.module.scss'
 
 const AboutPage = () => {
 	const { getBookById, book, loading, removeBook } = useBooksStore()
